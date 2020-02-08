@@ -1,26 +1,28 @@
 # Exercise 1: analyzing avocado sales with the `tidyr` package
 
 # Load necessary packages (`tidyr`, `dplyr`, and `ggplot2`)
-
-
+library("tidyr")
+library("dplyr)")
+library(ggplot2)
 # Set your working directory using the RStudio menu:
 # Session > Set Working Directory > To Source File Location
 
 # Load the `data/avocado.csv` file into a variable `avocados`
 # Make sure strings are *not* read in as factors
-
+avocados <- read.csv("data/avocados.csv", stringsAsFactors = F)
 
 # To tell R to treat the `Date` column as a date (not just a string)
 # Redefine that column as a date using the `as.Date()` function
 # (hint: use the `mutate` function)
 
-
+date<- column(thatiscorrect)
 # The file had some uninformative column names, so rename these columns:
 # `X4046` to `small_haas`
 # `X4225` to `large_haas`
 # `X4770` to `xlarge_haas`
 
-
+X4046 <- smallhass
+X4225 <- largehass
 # The data only has sales for haas avocados. Create a new column `other_avos`
 # that is the Total.Volume minus all haas avocados (small, large, xlarge)
 
